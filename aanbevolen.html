@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/stylesheet.css">
+    <title>Home Page</title>
+</head>
+
+
+<body>
+    <header>
+
+        <!--bovenste navigatie-->
+        <ul>
+            <li>
+                <a href="index.html"><img src="icon/nslogo.svg" alt="Home"></a>
+            </li>
+            <li>
+                <a href="registreren.html"><img src="icon/person.svg" alt="Aanmelden"></a>
+            </li>
+            <li>
+                <a href="#"><img src="icon/search.svg" alt="Zoeken"></a>
+            </li>
+        </ul>
+
+        <!--uitgelicht-->
+        <section>
+            <article>
+                <h1>Onverwacht</h1>
+                <a href="#"><img src="image/foto4.png" alt="oude stel"></a>
+            </article>
+        </section>
+
+        <!--hoofd navigatie-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Nieuw</a></li>
+                <li class="navLocation"><a href="aanbevolen.html">Aanbevolen</a></li>
+                <li><a href="populair.html">Populair</a></li>
+                <li><a href="download.html">Download</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="overzicht">
+
+        <article>
+            <a href="ongeluk.html">
+                <img class="download" src="icon/download.svg" alt="download">
+                <img src="image/a4-ongeluk.jpg" alt="Ongeluk">
+                <h2>Ongeluk</h2>
+                <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?</p>
+            </a>
+        </article>
+
+        <article>
+            <a href="paranoia.html">
+                <img class="download" src="icon/download.svg" alt="download">
+                <img src="image/a4-paranoia.jpg" alt="Paranoia">
+                <h2>Paranoia</h2>
+                <p>Vlak oordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn</p>
+            </a>
+        </article>
+
+        <article>
+            <a href="verrast.html">
+                <img class="download" src="icon/download.svg" alt="download">
+                <img src="image/a4-verrast.jpg" alt="verrast">
+                <h2>Verrast</h2>
+                <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat</p>
+            </a>
+        </article>
+
+        <button  id="filterButton" type="button" name="filter"><img src="icon/filter.svg" alt="filter"></button>
+
+        <!--filter sectie-->
+        <section class="filter">
+
+            <h2>Filter</h2>
+
+            <section class="genre">
+                <input type="checkbox" id="correspondentie">
+                <label for="correspondentie">correspondentie</label>
+                <input type="checkbox" id="fictie">
+                <label for="fictie">fictie</label>
+                <input type="checkbox" id="non-fictie">
+                <label for="non-fictie">non-fictie</label>
+                <input type="checkbox" id="opinie">
+                <label for="opinie">opinie</label>
+                <input type="checkbox" id="kort">
+                <label for="kort">kort</label>
+
+            </section>
+
+            <section class="duur">
+                <label for="duur">Duur</label>
+                <input type="range" id="duur" min="0" max="60" step="10" value="60" oninput="duurValue.value = duur.value" >
+                <output name="duurValue" id="duurValue">60 min</output>
+            </section>
+
+            <section class="datum">
+                <label for="datum">Datum</label>
+                <input type="month" id="maand">
+            </section>
+
+            <button type="button" name="annuleren">Annuleren</button>
+            <button type="button" name="toepassen">Toepassen</button>
+        </section>
+
+    </main>
+
+</body>
+
+<script src="script/script.js"></script>
+
+</html>
