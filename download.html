@@ -44,10 +44,61 @@
         </nav>
 
     </header>
+    <header>
+
+        <!--bovenste navigatie-->
+        <ul>
+            <li>
+                <a href="#"><img src="icon/nslogo.svg" alt="Home"></a>
+            </li>
+            <li>
+                <a href="registreren.html"><img src="icon/person.svg" alt="Aanmelden"></a>
+            </li>
+            <li>
+                <form>
+                    <input id="zoeken" name='zoeken' type="text" list="data_verhalen" placeholder="Wat voor verhalen zoekt u?">
+                    <datalist id="data_verhalen">
+                      <option value="Paraoia"></option>
+                      <option value="Ongeluk"></option>
+                    </datalist>
+                    <input type="submit">
+                </form>
+            </li>
+        </ul>
+
+        <!--uitgelicht-->
+        <section>
+            <article class="uitgelicht">
+                <h1>Onverwacht</h1>
+                <p>Het nieuwste verhaal is hier. Onverwacht is het meest recente verhaal</p>
+                <a href="#"><img src="image/foto4.png" alt="oude stel">
+                </a>
+            </article>
+
+            <article class="uitgelicht">
+                <h1>Paranoia</h1>
+                <a href="#"><img src="image/foto1.png" alt="oude stel"></a>
+                <p>Lees het meest spannende verhaal NU! Paranoia is heel spannend</p>
+            </article>
+
+
+        </section>
+
+        <!--hoofd navigatie-->
+        <nav>
+            <ul>
+                <li class="navLocation"><a href="index.html">Nieuw</a></li>
+                <li><a href="aanbevolen.html">Aanbevolen</a></li>
+                <li><a href="populair.html">Populair</a></li>
+                <li><a href="download.html">Download</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
 
     <main class="overzicht">
-      
+
         <article>
             <a href="#">
                 <img class="download" src="icon/download.svg" alt="download">
@@ -84,7 +135,7 @@
             </a>
         </article>
 
-        <button  id="filterButton" type="button" name="filter"><img src="icon/filter.svg" alt="filter"></button>
+        <button id="filterButton" type="button" name="filter"><img src="icon/filter.svg" alt="filter"></button>
 
         <!--filter sectie-->
         <section class="filter">
@@ -107,7 +158,7 @@
 
             <section class="duur">
                 <label for="duur">Duur</label>
-                <input type="range" id="duur" min="0" max="60" step="10" value="60" oninput="duurValue.value = duur.value" >
+                <input type="range" id="duur" min="0" max="60" step="10" value="60" oninput="duurValue.value = duur.value">
                 <output name="duurValue" id="duurValue">60 min</output>
             </section>
 

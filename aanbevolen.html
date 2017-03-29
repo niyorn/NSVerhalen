@@ -10,41 +10,57 @@
 
 
 <body>
-    <header>
+  <header>
 
-        <!--bovenste navigatie-->
-        <ul>
-            <li>
-                <a href="index.html"><img src="icon/nslogo.svg" alt="Home"></a>
-            </li>
-            <li>
-                <a href="registreren.html"><img src="icon/person.svg" alt="Aanmelden"></a>
-            </li>
-            <li>
-                <a href="#"><img src="icon/search.svg" alt="Zoeken"></a>
-            </li>
-        </ul>
+      <!--bovenste navigatie-->
+      <ul>
+          <li>
+              <a href="#"><img src="icon/nslogo.svg" alt="Home"></a>
+          </li>
+          <li>
+              <a href="registreren.html"><img src="icon/person.svg" alt="Aanmelden"></a>
+          </li>
+          <li>
+              <form>
+                  <input id="zoeken" name='zoeken' type="text" list="data_verhalen" placeholder="Wat voor verhalen zoekt u?">
+                  <datalist id="data_verhalen">
+                    <option value="Paraoia"></option>
+                    <option value="Ongeluk"></option>
+                  </datalist>
+                  <input type="submit">
+              </form>
+          </li>
+      </ul>
 
-        <!--uitgelicht-->
-        <section>
-            <article>
-                <h1>Onverwacht</h1>
-                <a href="#"><img src="image/foto4.png" alt="oude stel"></a>
-            </article>
-        </section>
+      <!--uitgelicht-->
+      <section>
+          <article class="uitgelicht">
+              <h1>Onverwacht</h1>
+              <p>Het nieuwste verhaal is hier. Onverwacht is het meest recente verhaal</p>
+              <a href="#"><img src="image/foto4.png" alt="oude stel">
+              </a>
+          </article>
 
-        <!--hoofd navigatie-->
-        <nav>
-            <ul>
-                <li><a href="index.html">Nieuw</a></li>
-                <li class="navLocation"><a href="aanbevolen.html">Aanbevolen</a></li>
-                <li><a href="populair.html">Populair</a></li>
-                <li><a href="download.html">Download</a></li>
-            </ul>
-        </nav>
+          <article class="uitgelicht">
+              <h1>Paranoia</h1>
+              <a href="#"><img src="image/foto1.png" alt="oude stel"></a>
+              <p>Lees het meest spannende verhaal NU! Paranoia is heel spannend</p>
+          </article>
 
-    </header>
 
+      </section>
+
+      <!--hoofd navigatie-->
+      <nav>
+          <ul>
+              <li class="navLocation"><a href="index.html">Nieuw</a></li>
+              <li><a href="aanbevolen.html">Aanbevolen</a></li>
+              <li><a href="populair.html">Populair</a></li>
+              <li><a href="download.html">Download</a></li>
+          </ul>
+      </nav>
+
+  </header>
 
     <main class="overzicht">
 
